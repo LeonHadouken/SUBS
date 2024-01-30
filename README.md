@@ -40,8 +40,11 @@ Base Interpreter — Выбираем Python 3.9 (Может называтьс�
 Устанавливаем необходимые библиотеки:
 
 pip install django
+
 pip install mtranslate
+
 pip install PyAudio
+
 pip install SpeechRecognition
 
 Обновляем pip:
