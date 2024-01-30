@@ -14,13 +14,13 @@
 
 Если гитхаба нет:
 
-Запускаете PyCharm —> File —> New Project.
+        Запускаете PyCharm —> File —> New Project.
 
 Установки:
 
-Location — Путь к проекту. Сразу же копируем в буфер полный путь.
-Base Interpreter — Выбираем Python 3.9 (Может называться Python39)
-Нажимаем Create.
+        Location — Путь к проекту. Сразу же копируем в буфер полный путь.
+        Base Interpreter — Выбираем Python 3.9 (Может называться Python39)
+        Нажимаем Create.
 
 Заходим в проводник, копируем адрес проекта из location в адресную строку, и копируем туда содержимое этого архива.
 
@@ -35,17 +35,17 @@ Base Interpreter — Выбираем Python 3.9 (Может называтьс�
 
 Устанавливаем необходимые библиотеки:
 
-pip install django
+        pip install django
 
-pip install mtranslate
+        pip install mtranslate
 
-pip install PyAudio
+        pip install PyAudio
 
-pip install SpeechRecognition
+        pip install SpeechRecognition
 
 Обновляем pip:
 
-python.exe -m pip install --upgrade pip
+        python.exe -m pip install --upgrade pip
 
 -----------------------------------------------------------
 Запуск.
@@ -53,11 +53,11 @@ python.exe -m pip install --upgrade pip
 
 Переходим в папку с исполняемым файлом:
 
-cd SpeechRecognitionProject
+        cd SpeechRecognitionProject
 
 Запускаем скрипт:
 
-python manage.py runserver
+        python manage.py runserver
 
 -----------------------------------------------------------
 Захват и отображение.
