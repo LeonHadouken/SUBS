@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Субтитры</title>
+</head>
+<body>
+
+     <style>
+        body {
+            background-color: green; /* Зеленый фон страницы */
+        }
+
+        #subtitle-container {
+            font-family: 'MGS2 Menu', sans-serif; /* Замененный шрифт */
+            font-size: 50px; /* Увеличенный размер текста */
+            color: white; /* Белый цвет текста */
+            -webkit-text-stroke: 1.5px black; /* Черная обводка текста */
+            text-shadow: 5px 1px 4px black; /* Тень вокруг текста */
+            text-align: center; /* Выравнивание по центру */
+        }
+    </style>
+    <div id="subtitle-container">
+        {{ translated_text }}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function updateSubtitle() {
+            $.ajax({
+                url: "/get_subtitle/",
+                type: "GET",
+                dataType: "json",
+                success: function(response) {
+                    $("#subtitle-container").text(response.subtitle);
+                },
+                error: function(error) {
+                    console.log("Ошибка при получении субтитров:", error);
+                }
+            });
+        }
+
+        // Обновляем субтитры каждые 100 миллисекунд
+        setInterval(updateSubtitle, 100);
+    </script>
+</body>
+</html>
