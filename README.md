@@ -23,6 +23,7 @@
 Запускаете PyCharm —> File —> New Project.
 
 Установки:
+
 Location — Путь к проекту. Сразу же копируем в буфер полный путь.
 Base Interpreter — Выбираем Python 3.9 (Может называться Python39)
 Нажимаем Create.
