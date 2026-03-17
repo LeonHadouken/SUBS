@@ -1,0 +1,65 @@
+# Виртуальное окружение
+venv/
+env/
+ENV/
+.venv/
+python_env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+MANIFEST
+
+# Базы данных
+*.sqlite3
+*.db
+db.sqlite3
+default.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3-journal
+media/
+staticfiles/
+static_root/
+
+# Тесты и отчеты
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# Временные файлы
+*.bak
+*.tmp
+*.temp
