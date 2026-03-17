@@ -1,0 +1,4 @@
+Django>=4.2.0,<5.0.0
+mtranslate==1.8
+PyAudio==0.2.14
+SpeechRecognition==3.10.4
